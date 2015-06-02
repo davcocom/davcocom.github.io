@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Perfil</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/navbar.js"></script>
+    </head>
+    <body>            
+        <nav id="navbar" class="navbar-default navbar-fixed-top" role="navigation"></nav>
+        <br>
+
+
+        <div class="perfil row">
+            <div class="container">
+                <div class="col-lg-3">
+                    <img class="centrado" src="pictures/airplane.png" alt="perfil"/>
+                    <h1>Juan Perez</h1>
+                </div>
+                <p id="info_usuario" class="col-lg-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container"> 
+            <div class="col-lg-7">
+                <div class="menu">
+                    <img class="btn" onclick="btnAgregar()" src="pictures/add.png" alt="Agregar"/>
+                    <img class="btn" src="pictures/notepad.png" alt=""/>  
+                    <img class="btn" src="pictures/explorer.png" alt=""/>
+                    <img class="btn" src="pictures/files.png" alt=""/>
+                    <img class="btn" src="pictures/settings.png" alt=""/>
+                    <img class="btn" src="pictures/trash.png" alt=""/>
+                    </div>
+                <div class="list-group">                
+                    <ul class="list-group-item disabled">
+                        <li>Subidos recientemente                     
+                        </li>
+                    </ul>
+                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item">Morbi leo risus</a>
+                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                </div>
+            </div>
+            <br>
+            <div class="panel panel-default col-lg-5">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Estadisticas</div>
+                <!-- Table -->
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Más visitada</th>
+                            <td>Lorem</td>
+                        </tr>
+                        <tr>
+                            <th>Más gustada</th>
+                            <td>123</td>
+                        </tr>
+                        <tr>
+                            <th>Más comentada</th>
+                            <td>ipsum dolor sit amet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

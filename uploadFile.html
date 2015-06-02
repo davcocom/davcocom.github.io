@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Subir archivo</title>
+    <link rel="stylesheet" href="css/bootstrapYeti.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar-default navbar-fixed-top" role="navigation"></nav>
+
+    <div class="container" >  
+        <div id="paginacion">
+            <div id="pagina-1">
+                <form action="fileConfiguration.php" method="post" enctype="multipart/form-data">
+                <br>
+                <label class="control-label">Archivo...</label>
+                <input type="file" value="Examinar" id="archivo" name="archivoCVS">
+                <br>
+                <br>
+                <label class="col-lg-2 control-label">Nombre</label> 
+                <input class="form-control" id="inputName" placeholder="Nombre" type="text" name="nombre">
+                <br>
+                <label class="col-lg-2 control-label">Descripcion</label> 
+                <textarea class="form-control" rows="3" id="textArea" name="descripcion"></textarea>
+                <br>
+                <label class="col-lg-2 control-label">Área de estudio</label> 
+                <select class="form-control" id="selectArea" name="area">
+                    <option>Humanidades y Ciencias Sociales</option>
+                    <option>Biología y Biomedicina</option>
+                    <option>Ciencias Agrarias</option>
+                    <option>Ciencia y Tecnologías Físicas</option>
+                    <option>Ciencia y Tecnologías Químicas</option>
+                </select>
+                <ul class='pager'>
+                    <li id='li-anterior' class="previous disabled"><a href='#'>Anterior</a></li>
+                    <li id='li-siguiente'><a href='#'><input type="submit" Value="Siguiente"></a></li>
+                </ul>
+                </form>
+            </div>
+        </div>
+    </div>  
+    <br>
+    <div class="container">
+        <button class="btn btn-danger" onclick="btnCancelar()">Cancelar</button>
+    </div>
+    <script src="http://c.fzilla.com/1286136086-jquery.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
